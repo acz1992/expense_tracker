@@ -9,6 +9,10 @@ This project was based on MERN stack
 
 ## To Do
 
+### Deployment
+
+Messed this up. Using onrender to host backend, but problem seems to be rendering client part to git pages
+
 ### Styling
 
 Give component a border
