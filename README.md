@@ -11,7 +11,10 @@ This project was based on MERN stack
 
 ### Deployment
 
-Messed this up. Using onrender to host backend, but problem seems to be rendering client part to git pages
+Messed this up. GitHub pages and OnRender seem to be working, but getting following errors in browser console:
+Failed to load resource: the server responded with a status of 404 ()
+GlobalState.js:31 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'data')
+    at getTransactions (GlobalState.js:31:24)
 
 ### Styling
 
