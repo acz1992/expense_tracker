@@ -1,6 +1,6 @@
-# Quote Generator
+# Expense Tracker
 
-This project was bootstrapped with Create React App.
+This project was based on MERN stack
 
 ## Mission
 
@@ -13,10 +13,6 @@ This project was bootstrapped with Create React App.
 
 Give component a border
 
-### Add backend
-
-Add backend functionality so that state persists after page is refreshed
-
 ### Add login
 
-Add login to secure user information
+Add login to secure user information. Or possibly take client section and make part of a bigger project that has authentication
