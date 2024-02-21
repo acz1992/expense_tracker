@@ -17,7 +17,6 @@ export const GlobalProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(AppReducer, initialState);
 
 	// Actions that make calls to Reducer
-
 	async function getTransactions() {
 		try {
 			const res = await axios.get("/api/v1/transactions");
