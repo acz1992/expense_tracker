@@ -7,8 +7,8 @@ const morgan = require("morgan");
 const connectDB = require("./config/db");
 
 dotenv.config({ path: "./config/config.env" });
-
-connectDB();
+/* 
+connectDB(); */
 
 const transactions = require("./routes/transactions");
 
@@ -20,13 +20,13 @@ if (process.env.NODE_ENV === "development") {
 	app.use(morgan("dev"));
 }
 
-app.get("/", () => {
-	return {
-		message: "hello",
-	};
+app.get("/", (req, res) => {
+	return res.status(200).json({
+		message: "OK",
+	});
 });
 
-app.use("/api/v1/transactions", transactions);
+/* app.use("/api/v1/transactions", transactions) */
 
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
